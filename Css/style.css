@@ -7,6 +7,9 @@
 body {
     background-image: url(./Assets/Coffee_beans.png);
     font-family: sans-serif;
+    /* display: flex;
+    justify-content: center;
+    align-items:center ; */
 }
 
 h1,
@@ -23,8 +26,24 @@ h2 {
 .container {
     background-color: burlywood;
     margin: 20px auto 40px auto;
-    max-width: 500px;
+    width: 50%; 
+    min-width: 400px;
     padding: 20px;
+}
+@media screen and (max-width: 768px){
+    .container{
+        min-width: 350px;
+    }
+}
+@media screen and (max-width: 425px){
+    .container{
+        min-width: 300px;
+    }
+}
+@media screen and (max-width: 320px){
+    .container{
+        min-width: 250px;
+    }
 }
 
 header h1 {
